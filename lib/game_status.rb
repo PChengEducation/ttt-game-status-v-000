@@ -29,6 +29,7 @@ end
 def full? (board)
 WIN_COMBINATIONS.each do |win_set|
   if win_set.all? {|win_position| board[win_position] != "X"} && win_set.all? {|win_position| board[win_position] != "O"} && win_set.none? {|win_position| board[win_position] == " "}
+return true
 else
 return false
 end
