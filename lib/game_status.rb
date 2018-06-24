@@ -32,3 +32,4 @@ WIN_COMBINATIONS.each do |win_set|
     return true
 end
 end
+end
