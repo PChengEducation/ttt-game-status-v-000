@@ -59,13 +59,13 @@ end
 end
 
 def winner(board)
-WIN_COMBINATIONS.each do |win_set|
+#WIN_COMBINATIONS.each do |win_set|
 if won?(board = "X") && over?(board)
     return "X"
   elsif won?(board = "O") && over?(board)
     return "O"
   elsif !won?(board) && over?(board)
     return nil
-end
+#end
 end
 end
