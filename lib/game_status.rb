@@ -59,7 +59,7 @@ end
 end
 
 def winner(board)
-
+WIN_COMBINATIONS.each do |win_set|
 if won?(board = "X")
     return X
   elsif won?(board = "O")
