@@ -64,7 +64,7 @@ if won?(board = "X") && over?(board)
     return X
   elsif won?(board = "O") && over?(board)
         return O
-  elsif !won?(board) && over?(board)
+  else
     return nil
 end
 end
