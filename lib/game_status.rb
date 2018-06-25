@@ -60,7 +60,7 @@ end
 
 def winner? (board)
   WIN_COMBINATIONS.each do |win_set|
-  if win_set.all? {|win_position| board[win_position] == "X"}
+  if won? (board) && win_set.all? {|win_position| board[win_position] == "X"}
     return X
 end
 end
