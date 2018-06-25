@@ -59,10 +59,10 @@ end
 end
 
 def winner(board)
-WIN_COMBINATIONS.each do |win_set|
-if win_set.all? {|win_position| board[win_position] == "X"}
+
+if 
     return X
-  elsif win_set.all? {|win_position| board[win_position] == "O"}
+  elsif 
         return O
   elsif !won?(board) && over?(board)
     return nil
