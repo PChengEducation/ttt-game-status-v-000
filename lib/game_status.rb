@@ -51,5 +51,7 @@ if draw?(board)
   return true
 elsif full?(board) || !full?(board)
   return true
+elsif !full?(board)
+  return false
 end
 end
