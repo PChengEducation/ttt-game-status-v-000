@@ -59,7 +59,7 @@ end
 end
 
 def winner? (board)
-  if !won?(board) && draw?(board) && over?(board) && full?(board)
+  if !won?(board) && over?(board)
     return nil
 end
 end
