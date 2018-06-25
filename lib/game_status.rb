@@ -66,6 +66,6 @@ if
         return O
   elsif !won?(board) && over?(board)
     return nil
-end
+
 end
 end
