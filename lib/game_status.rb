@@ -40,6 +40,8 @@ def draw? (board)
 WIN_COMBINATIONS.each do |win_set|
 if win_set.all? {|win_position| board[win_position] != "X"} && win_set.all? {|win_position| board[win_position] != "O"} && win_set.none? {|win_position| board[win_position] != " "}
   return true
+elsif win_set.all? {|win_position| board[win_position] != "X"} || win_set.all? {|win_position| board[win_position] != "O"}
+  return false
 end
 end
 end
