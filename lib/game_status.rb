@@ -57,3 +57,7 @@ elsif !won?(board) && !full?(board)
   return false
 end
 end
+
+def winner? (board)
+
+end
