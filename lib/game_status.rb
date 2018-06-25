@@ -60,9 +60,9 @@ end
 
 def winner(board)
 
-if 
+if
     return X
-  elsif 
+  elsif
         return O
   elsif !won?(board) && over?(board)
     return nil
