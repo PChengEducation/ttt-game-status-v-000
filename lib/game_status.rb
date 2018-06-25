@@ -47,7 +47,7 @@ end
 end
 
 def over? (board)
-  if win_set.all? {|win_position| board[win_position] != "X"} && win_set.all? {|win_position| board[win_position] != "O"} && win_set.none? {|win_position| board[win_position] != " "}
-    return true
+if draw?(board)
+  return true
 end
 end
