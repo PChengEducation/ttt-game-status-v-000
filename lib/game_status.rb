@@ -58,7 +58,7 @@ elsif !won?(board) && !full?(board)
 end
 end
 
-def winner? (board)
+def winner?(board)
   if !won?(board) && over?(board)
     return nil
 end
